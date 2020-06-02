@@ -36,6 +36,4 @@ public enum Card {
     public String getSymbol() {
         return symbol;
     }
-
-
 }

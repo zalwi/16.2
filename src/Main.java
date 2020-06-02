@@ -8,14 +8,15 @@ public class Main {
         List<String> cardsEN = CardDeckUtils.getListOfCards(CardDeckUtils.ENGLISH);
 
         System.out.println("--- Talia 52 kart po polsku ---");
-        for(int i = 1; i<= cardsPL.size(); i++){
-            System.out.println(i + ".\t" + cardsPL.get((i-1)));
+        for (int i = 1; i <= cardsPL.size(); i++) {
+            System.out.println(i + ".\t" + cardsPL.get((i - 1)));
         }
-        System.out.println("--- Talia 52 kart po angielsku ---");
-        for(int i = 1; i<= cardsEN.size(); i++){
-            System.out.println(i + ".\t" + cardsEN.get((i-1)));
-        }
-        System.out.println("--- koniec ---");
 
+        System.out.println("--- Talia 52 kart po angielsku ---");
+        for (int i = 1; i <= cardsEN.size(); i++) {
+            System.out.println(i + ".\t" + cardsEN.get((i - 1)));
+        }
+
+        System.out.println("--- koniec ---");
     }
 }

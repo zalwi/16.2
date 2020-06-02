@@ -1,8 +1,5 @@
 package data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public enum CardDeck {
 
     CLUBS(      "żołądź",   "clubs",    "Trefl","♣"),
@@ -13,14 +10,14 @@ public enum CardDeck {
     private Card[] cards;
     private String descriptionPL;
     private String descriptionEN;
-    private String popularDescPL;
+    private String classicDescPL;
     private String symbol;
 
-    private CardDeck(String descriptionPL, String descriptionEN, String popularDescPL, String symbol){
+    private CardDeck(String descriptionPL, String descriptionEN, String classicDescPL, String symbol){
         this.cards = Card.values();
         this.descriptionPL = descriptionPL;
         this.descriptionEN = descriptionEN;
-        this.popularDescPL = popularDescPL;
+        this.classicDescPL = classicDescPL;
         this.symbol = symbol;
     }
 
@@ -36,8 +33,8 @@ public enum CardDeck {
         return descriptionEN;
     }
 
-    public String getPopularDescPL() {
-        return popularDescPL;
+    public String getClassicDescPL() {
+        return classicDescPL;
     }
 
     public String getSymbol() {
